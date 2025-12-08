@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Output Settings */
+    "target": "ES2022", // modern JS
+    "module": "CommonJS", // best for Node backend
+    "moduleResolution": "node",
+    "rootDir": "src", // source files
+    "outDir": "dist", // compiled JS
+
+    /* Module Support */
+    "esModuleInterop": true, // allows import express from 'express'
+    "resolveJsonModule": true, // import JSON files
+
+    /* Type Checking */
+    "strict": true, // enable strict mode
+    "skipLibCheck": true, // faster build
+    "forceConsistentCasingInFileNames": true,
+
+    /* Optional Good Flags */
+    "noUncheckedIndexedAccess": false, // disabled for easier coding
+    "exactOptionalPropertyTypes": false,
+
+    /* Type Declarations */
+    "types": ["node"],
+
+    /* Useful Defaults */
+    "sourceMap": true, // useful for debugging
+    "declaration": false, // not needed for backend apps
+    "noEmitOnError": false // allow compiling even with minor errors
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "dist"]
+}
